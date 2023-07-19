@@ -21,6 +21,6 @@ public class Student {
     private String firstName;
     private String lastName;
     private Long phoneNumber;
-    @OneToMany(cascade = CascadeType.ALL)
-    private List<Address> address;
+    @OneToOne(cascade = CascadeType.ALL)
+    private Address address;
 }

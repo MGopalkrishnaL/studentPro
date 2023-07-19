@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class AddressService {
     private final AddressRepository addressRepository;
+
     public void saveAddress(Address address) {
         addressRepository.save(address);
     }

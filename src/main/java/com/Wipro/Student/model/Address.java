@@ -18,7 +18,7 @@ public class Address {
     private String state;
     private String country;
     private Long pinCode;
-    @ManyToOne
+    @OneToOne(mappedBy = "address")
     @JsonIgnore
     private Student student;
 }
